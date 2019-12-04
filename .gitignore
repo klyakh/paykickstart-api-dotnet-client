@@ -1,0 +1,19 @@
+# User-specific files
+*.suo
+*.user
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio cache/options directory
+.vs/
+packages/
+
+# ReSharper is a .NET coding add-in
+#_ReSharper*/
+#*.[Rr]e[Ss]harper
+#*.DotSettings.user
+
+#Project specific
