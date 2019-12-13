@@ -1,16 +1,6 @@
-# PayKickstart IPN validation in .NET
+# PayKickstart IPN validation for .NET
 
-https://support.paykickstart.com/api/#instant-payment-notification-ipn
-
-Other languages:
-https://github.com/ArsalanDotMe/paykickstart-validator - thanks, used as example.
-
-
-Some useful PHP information:
-https://www.php.net/manual/ru/language.types.array.php
-https://www.php.net/manual/ru/function.ksort.php
-
-
+Here is an example of Controller that performs IPN validation:
 ```csharp
 public class PayKickstartIPNController : Controller
 {
@@ -62,3 +52,15 @@ public class PayKickstartIPNController : Controller
 }
 
 ```
+
+
+
+https://support.paykickstart.com/api/#instant-payment-notification-ipn
+
+Other languages:
+https://github.com/ArsalanDotMe/paykickstart-validator - thanks, used as example.
+
+
+Some useful PHP information:
+https://www.php.net/manual/ru/language.types.array.php
+https://www.php.net/manual/ru/function.ksort.php
