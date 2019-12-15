@@ -137,7 +137,6 @@ namespace KeksCS.PayKickstartApi
                 throw new Exception("New Purchase: invalid input");
             }
 
-            //TODO: need another approach for "serializing" input. Maybe something attribute-based.
             var fields = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("auth_token", _authToken),
@@ -194,7 +193,6 @@ namespace KeksCS.PayKickstartApi
         /// <summary>
         /// About passing arrays in POST in PHP - https://www.php.net/manual/en/function.http-build-query.php
         /// 
-        /// TODO: need to create separate method NewPurchase and use it in this method.
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -272,7 +270,7 @@ namespace KeksCS.PayKickstartApi
             {
                 if (disposing)
                 {
-                    // TODO: dispose managed state (managed objects).
+                    // dispose managed state (managed objects).
                     if(_http != null)
                     {
                         _http.Dispose();
@@ -280,14 +278,14 @@ namespace KeksCS.PayKickstartApi
                     }
                 }
 
-                // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-                // TODO: set large fields to null.
+                // free unmanaged resources (unmanaged objects) and override a finalizer below.
+                // set large fields to null.
 
                 disposedValue = true;
             }
         }
 
-        // TODO: override a finalizer only if Dispose(bool disposing) above has code to free unmanaged resources.
+        // override a finalizer only if Dispose(bool disposing) above has code to free unmanaged resources.
         // ~PayKickstartApiClient()
         // {
         //   // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
@@ -299,7 +297,7 @@ namespace KeksCS.PayKickstartApi
         {
             // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
             Dispose(true);
-            // TODO: uncomment the following line if the finalizer is overridden above.
+            // uncomment the following line if the finalizer is overridden above.
             // GC.SuppressFinalize(this);
         }
         #endregion
