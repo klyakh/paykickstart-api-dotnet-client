@@ -184,6 +184,16 @@ namespace KeksCS.PayKickstartApi
             return (success, jsonResponse);
         }
 
+        public async Task<JObject> GetTransactionJsonAsync(string transactionId)
+        {
+            string url = $"transaction/get?auth_token={_authToken}&id={transactionId}";
+            var response = await Http.GetAsync(url);
+            var resultContent = await response.Content.ReadAsStringAsync();
+
+            var jsonResponse = JObject.Parse(resultContent);
+            return jsonResponse;
+        }
+
 
         //public async Task<JObject> NewPurchaseUsingRefPurchase(string refPurchaseId,   string campaignId, string productId, )
         //{
