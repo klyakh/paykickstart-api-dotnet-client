@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace KeksCS.PayKickstartApi.Api
+namespace KeksCS.PayKickstartApi.Entities
 {
     /// <summary>
     /// PK object represents business model not correctly. In case a product is a subscription, Purchase represents subscription, and inner subscriptions represent part of the subsription data.

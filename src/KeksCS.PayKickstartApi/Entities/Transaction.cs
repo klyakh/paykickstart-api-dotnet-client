@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace KeksCS.PayKickstartApi.Api
+namespace KeksCS.PayKickstartApi.Entities
 {
     public class Transaction
     {
